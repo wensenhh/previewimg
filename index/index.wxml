@@ -1,0 +1,5 @@
+点击图片预览
+<block wx:for="{{groupList}}" wx:key="id">
+	<image src="{{item.src}}" bindtap="preview" data-index="{{index}}"></image>
+</block>
+<C-preview groupList="{{groupList}}" previewFlag="{{ispreview}}"></C-preview>

@@ -1,0 +1,56 @@
+.imgbox{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+.images{
+  width: 100%;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 操作 */
+
+.tool {
+  position: absolute;
+  color: #fff;
+  top:0;
+  width:100%;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  line-height: 28rpx;
+  z-index: 1;
+  opacity: .8;
+  height: 68rpx;
+  margin-top: 20rpx;
+}
+
+.tool .close {
+  display: inline-block;
+  padding: 20rpx;
+  position: relative;
+  /* left: -20rpx;
+  top: -20rpx; */
+  top: 20rpx;
+  height: 28rpx;
+}
+
+.close image {
+  height: 24rpx;
+  width: 24rpx;
+}
+
+.tool .count {
+  float: right;
+  display: block;
+}

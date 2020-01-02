@@ -1,0 +1,20 @@
+<view class="imgbox" wx:if="{{previewFlag}}">
+<view class="tool">
+    <view class="close" bindtap="closeprev">
+      <image class="images" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEyIiB2aWV3Qm94PSIwIDAgMTIgMTIiIHdpZHRoPSIxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMS41IDEuNSA5IDltMC05LTkgOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjY2VjZWNlIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=" />
+    </view>
+    <!-- <view class="count">{{itemIndex}}/{{groupList.length}}</view> -->
+  </view>
+  <!-- 头部  -->
+  <swiper class="swiper" skip-hidden-item-layout  current="{{current}}">
+    <block wx:for="{{groupList}}" wx:key="id">
+      <swiper-item>
+        <movable-area class="swiper" scale-area>
+          <movable-view class="swiper" direction="all" out-of-bounds scale scale-min="1" scale-max="4" scale-value="1" >
+            <image class="images" src="{{item.src}}" mode="aspectFit"></image>
+          </movable-view>
+        </movable-area>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

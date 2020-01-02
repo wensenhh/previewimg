@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "C-preview": "../components/previewimg/previewimg"
+  }
+}
